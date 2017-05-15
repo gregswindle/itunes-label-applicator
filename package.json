@@ -1,0 +1,76 @@
+{
+  "name": "itunes-label-applicator",
+  "version": "0.1.0",
+  "description": "Adds the record label's name to Songs' Grouping fields and creates a Labels: <label-name> Smart Playlist",
+  "main": "index.js",
+  "scripts": {
+    "commitmsg": "commitplease",
+    "precommit": "npm run commitmsg",
+    "pretest": "eslint . --fix",
+    "test": "jest --config=jest.config.json",
+    "prepublish": "nsp check",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregswindle/itunes-label-applicator.git"
+  },
+  "keywords": [
+    "itunes",
+    "grouping",
+    "record-label",
+    "smart-playlist"
+  ],
+  "author": "Greg Swindle <greg@swindle.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gregswindle/itunes-label-applicator/issues"
+  },
+  "homepage": "https://github.com/gregswindle/itunes-label-applicator#readme",
+  "devDependencies": {
+    "bithound": "^1.7.0",
+    "commitplease": "^2.7.9",
+    "coveralls": "^2.12.0",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "git-labelmaker": "^0.9.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.2",
+    "js-yaml": "^3.8.3",
+    "nsp": "^2.6.3",
+    "semantic-release": "^6.3.2",
+    "semantic-release-cli": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "build",
+      "ci",
+      "chore",
+      "revert"
+    ],
+    "scope": "\\S+.*"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "denodeify": "^1.2.1",
+    "lodash": "^4.17.4",
+    "xml2js": "^0.4.17"
+  }
+}
