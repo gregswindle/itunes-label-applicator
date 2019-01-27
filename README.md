@@ -1,5 +1,7 @@
 # `itunes-label-applicator`
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/itunes-label-applicator.svg)](https://greenkeeper.io/)
+
 > Adds record labels' names to iTunes Songs' Grouping fields and creates a `Labels: <label-name>` Smart Playlist by label.
 
 ## Features
